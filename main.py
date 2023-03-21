@@ -21,7 +21,8 @@ if __name__ == '__main__':
 				else:
 					i = int(i) + 3
 					new_list.append((str(i)))
-
+			new_password = ''.join(new_list)
+			print('Your password has been encoded and stored!')
 
 
 
