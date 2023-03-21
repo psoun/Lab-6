@@ -6,6 +6,7 @@ if __name__ == '__main__':
 
 		user_input = int(input('Please enter an option: '))
 
+		# Decode function 
 		if user_input == 1:
 			original_password = str(input('Please enter your password to encode: '))
 			password_list = list(original_password)
