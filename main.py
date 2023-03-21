@@ -1,4 +1,21 @@
 # Preston Soundara
+
+def encode():
+	original_password = str(input('Please enter your password to encode: '))
+	password_list = list(original_password)
+	new_list = []
+	for i in password_list:
+		if int(i) not in range(7):
+			i = int(i) + 3
+			i = str(i)[1]
+			new_list.append(str(i))
+		else:
+			i = int(i) + 3
+			new_list.append((str(i)))
+
+	return ''.join(new_list)
+
+
 if __name__ == '__main__':
 	# Print menu on loop
 	while True:
@@ -10,18 +27,7 @@ if __name__ == '__main__':
 
 		# Encode function
 		if user_input == 1:
-			original_password = str(input('Please enter your password to encode: '))
-			password_list = list(original_password)
-			new_list = []
-			for i in password_list:
-				if int(i) not in range(7):
-					i = int(i) + 3
-					i = str(i)[1]
-					new_list.append(str(i))
-				else:
-					i = int(i) + 3
-					new_list.append((str(i)))
-			new_password = ''.join(new_list)
+			new_password = encode()
 			print('Your password has been encoded and stored!')
 
 
