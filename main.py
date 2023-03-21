@@ -1,4 +1,5 @@
 if __name__ == '__main__':
+	# Print menu on loop
 	while True:
 		print('Menu')
 		print('-------------')
@@ -6,7 +7,7 @@ if __name__ == '__main__':
 
 		user_input = int(input('Please enter an option: '))
 
-		# Decode function 
+		# Decode function
 		if user_input == 1:
 			original_password = str(input('Please enter your password to encode: '))
 			password_list = list(original_password)
